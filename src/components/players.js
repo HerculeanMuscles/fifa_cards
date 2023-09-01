@@ -1,11 +1,11 @@
-const players = [
+const Players = [
 	{
 		name: "Lionel Messi",
 		team: "Inter Miami",
 		nationality: "Argentina",
 		jerseyNumber: 10,
 		age: 36,
-		imageUrl: "https://example.com/player1-image.jpg",
+		imageUrl: "./lm10.jpg",
 	},
 	{
 		name: "Cristiano Ronaldo",
@@ -13,7 +13,7 @@ const players = [
 		nationality: "Portugal",
 		jerseyNumber: 7,
 		age: 38,
-		imageUrl: "https://example.com/player2-image.jpg",
+		imageUrl: "./cr7",
 	},
 	{
 		name: "Kylian Mbappé",
@@ -21,7 +21,7 @@ const players = [
 		nationality: "France",
 		jerseyNumber: 7,
 		age: 24,
-		imageUrl: "https://example.com/player3-image.jpg",
+		imageUrl: "./km7",
 	},
 	{
 		name: "Erling Haaland",
@@ -29,9 +29,8 @@ const players = [
 		nationality: "Norway",
 		jerseyNumber: 9,
 		age: 23,
-		imageUrl:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Erling_Haaland_2023_%28cropped-v2%29.jpg/330px-Erling_Haaland_2023_%28cropped-v2%29.jpg",
+		imageUrl: "./eh9",
 	},
 ];
 
-export default players;
+export default Players;
