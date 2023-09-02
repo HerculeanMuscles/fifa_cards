@@ -1,16 +1,37 @@
 import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Player(props) {
 	return (
 		<>
-			<Card style={{ width: "18rem" }}>
+			<Card className="player-card" style={{ width: "18rem" }}>
 				<Card.Img variant="top" src={props.imageUrl} />
 				<Card.Body>
 					<Card.Title>{props.name}</Card.Title>
-					<Card.Text> {props.nationality}</Card.Text>
-					<Card.Text> {props.jerseyNumber}</Card.Text>
-					<Card.Text> {props.age}</Card.Text>
-					<Card.Text> </Card.Text>
+					<div className="row-badge">
+						<Row>
+							<Col>
+								<Card.Text>{props.team}</Card.Text>
+							</Col>
+							<Col>
+								<Image src={props.teamBadge} className="w-25" />
+							</Col>
+						</Row>
+					</div>
+					<div className="row-badge">
+						<Row>
+							<Col>
+								<Card.Text>{props.nationality}</Card.Text>
+							</Col>
+							<Col>
+								<Image src={props.nationBadge} className="w-25" />
+							</Col>
+						</Row>
+					</div>
+					<Card.Text>Number : {props.jerseyNumber}</Card.Text>
+					<Card.Text>Age : {props.age}</Card.Text>
 				</Card.Body>
 			</Card>
 		</>
